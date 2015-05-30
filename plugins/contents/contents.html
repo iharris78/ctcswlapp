@@ -7,13 +7,13 @@
         </div>
     </header>
     <% _.each(sections, function(section) { %>
-    <% if (section.modules && section.modules.length >0) { %>
+    <% if (true || section.modules && section.modules.length >0) { %>
     <section>
         <% if (sections.length > 1) { %>
 
             <% if(section.summary) { %>
             <h3 data-sectionid="<%= section.id %>" style="background-image: url(img/expandgrey.png); background-position-x: 95%; background-repeat: no-repeat;"><%= MM.util.formatText(section.name) %></h3>
-            <div id="section-<%= section.id %>" style="display: none">
+            <div id="section-<%= section.id %>" style="display: inline">
                 <%= MM.util.formatText(section.summary) %>
             </div>
             <% } else { %>

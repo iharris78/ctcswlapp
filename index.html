@@ -245,7 +245,7 @@
         <ul class="nav submenu">
             <% _.each(courses, function(course) { %>
             <li class="nav-item">
-                <a href="#" class="toogler expand touch-row">
+            <a href="#course/contents/<%= course.id %>" class="touch-row">
                     <div class="plugin-name">
                         <%= course.fullname %>
                     </div>
